@@ -1,0 +1,214 @@
+body {
+    background-color: white;
+}
+
+.acceuille{
+    background-image: url("4.png");
+
+
+}
+.titre{
+
+    background: white;
+    text-align: center;
+    border-radius: 30px;
+    border-style:inset;
+    margin: 10px 400px 20px;
+}
+
+
+
+#quantik{
+    display: flex;
+    color: aqua;
+    justify-content: center;
+}
+
+
+
+.getPlateau{
+    position: center;
+    padding: 60px;
+    height: 400px;
+    width: 400px;
+    border : 2px red solid;
+
+}
+a{
+    text-decoration: none;
+    padding: 10px;
+
+
+}
+
+.para{
+    color:white;
+    font-size: 24px;
+    font-family: arial, sans-serif;
+
+    text-align: center;
+
+}
+.btn-jouer:hover{
+    background-color: #4CAF50;
+}
+.btn-jouer{
+    border-radius: 12px;
+    position: center;
+    width: 200px;
+    height: 40px;
+}
+#jouer{
+    display: flex;
+    justify-content: center;
+
+    align-self: flex-end;
+}
+
+.getPieces {
+    display: flex;
+    flex-wrap: wrap;
+    border : 2px green solid;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    padding: 30px;
+    width: 200px;
+}
+
+
+
+.piece {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.piece:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+.pieceDispo {
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transition: opacity 1s;
+    opacity: 1;
+    font-size: 16px;
+    padding: 12px 25px;
+    margin: 4px 2px;
+}
+
+.pieceDispo{
+    font-weight: bold;
+    text-shadow: 0 1px 0 white;
+    border-radius: 3px;
+    padding: 5px 10px;
+    border: 1px solid #DDD;
+    box-shadow:0px 0px 10px #4183C4;
+    -webkit-animation-name: clignote; //on affecte l'animation clignote à notre bouton
+-webkit-animation-duration: 1s; //on définit la durée de l'animation à 1s
+-webkit-animation-iteration-count:infinite; //on dit que l'animation se répétera à l'infini.
+}
+
+
+
+.piecePlateau{
+    width: 100px;
+    height: 100px;
+
+}
+
+#annul {
+    position: relative;
+    background-color: #4CAF50;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+#annul {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+#annul {
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA;
+}
+
+#annul:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+.recommencer {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.recommencer {
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA;
+}
+
+.recommencer:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+.piecePlateauDispo{
+    width: 100px;
+    height: 100px;
+}
+
+.conteneurPieces{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: unset !important
+}
+
+footer{
+    display: flex;
+    background:#ccc;
+   position:absolute;
+    width:100%;
+    justify-content: center;
+    padding-top:50px;
+
+    height:50px;
+
+}
